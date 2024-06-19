@@ -1,0 +1,26 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ResumeButton : MonoBehaviour
+{
+    public GameObject PauseMenu;
+
+    private void Start()
+    {
+        GameManager.Instance.Paused += OnPaused;
+        PauseMenu.SetActive(false);
+    }
+
+    private void OnPaused(bool value)
+    {
+        PauseMenu.SetActive(value);
+    }
+
+    public void OnPressed()
+    {
+        PauseMenu.SetActive(false);
+        GameManager.Instance.GamePause = false;
+    }
+}

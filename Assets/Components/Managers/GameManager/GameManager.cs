@@ -8,15 +8,25 @@ public class GameManager : MonoBehaviour
 {
     public Action<int> TimerReduced;
     public Action<int> ScoreChanged;
+    public Action<bool> Paused;
 
     public int GameTimer = 60;
+    public bool _gamePause = false;
+    public bool GamePause
+    {
+        get { return _gamePause; }
+        set {
+            _gamePause = value;
+            Paused?.Invoke(value);
+        }
+    }
     private int _gameScore = 0;
     public int GameScore
     {
         get { return _gameScore; }
         set {
             _gameScore = value;
-            ScoreChanged.Invoke(_gameScore);
+            ScoreChanged?.Invoke(_gameScore);
         }
     }
 
@@ -44,8 +54,23 @@ public class GameManager : MonoBehaviour
         Destroy(this);
     }
 
+    private void Update()
+    {
+        PauseGameOnEsc();
+    }
+
+    private void PauseGameOnEsc()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GamePause = !GamePause;
+        }
+    }
+
     private void TimerReduce()
     {
+        if (GamePause) return;
+
         if (GameTimer <= 0)
         {
             CancelInvoke(nameof(TimerReduce));
@@ -53,6 +78,6 @@ public class GameManager : MonoBehaviour
         }
 
         GameTimer--;
-        TimerReduced.Invoke(GameTimer);
+        TimerReduced?.Invoke(GameTimer);
     }
 }

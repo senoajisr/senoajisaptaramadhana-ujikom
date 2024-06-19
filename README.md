@@ -1,13 +1,14 @@
 # Uji Komputer Agate
 
+senoajisaptaramadhana-ujikom
 Senoaji Sapta Ramadhana
 Universitas Telkom
 
 # Todos
 
-- [ ] Membuat repo github
+- [x] Membuat repo github
 
-- [ ] Repo publik
+- [x] Repo publik
 
 - [ ] Commit untuk build windows di branch "build"
 
@@ -15,13 +16,15 @@ Universitas Telkom
 
   
 
-- [ ] Timer durasi 60 detik
+- [x] Timer durasi 60 detik
 
-- [ ] Main menu
+- [x] Main menu
 
 - [ ] Game play
 
   - [ ] Pause menu
+    - [ ] UI
+    - [ ] Stop game
   - [ ] Game over menu
 
 - [ ] Input
