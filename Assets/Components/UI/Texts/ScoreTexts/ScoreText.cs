@@ -11,7 +11,7 @@ public class ScoreText : MonoBehaviour
     void Start()
     {
         SetText(GameManager.Instance.GameScore);
-        GameManager.Instance.ScoreChanged += OnScoreChanged;
+        GameManager.Instance.OnScoreChanged += OnScoreChanged;
     }
 
     public void OnScoreChanged(int score)

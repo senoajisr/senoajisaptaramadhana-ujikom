@@ -11,7 +11,7 @@ public class TimerText : MonoBehaviour
     void Start()
     {
         SetText(GameManager.Instance.GameTimer);
-        GameManager.Instance.TimerReduced += OnTimerReduced;
+        GameManager.Instance.OnTimerReduced += OnTimerReduced;
     }
 
     public void OnTimerReduced(int time)

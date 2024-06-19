@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public Action<int> TimerReduced;
-    public Action<int> ScoreChanged;
-    public Action<bool> Paused;
+    public Action<int> OnTimerReduced;
+    public Action<int> OnScoreChanged;
+    public Action<bool> OnPaused;
     public Action<bool> OnGameOver;
 
     public int GameTimer = 60;
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         get { return _gamePause; }
         set {
             _gamePause = value;
-            Paused?.Invoke(value);
+            OnPaused?.Invoke(value);
         }
     }
     private int _gameScore = 0;
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         get { return _gameScore; }
         set {
             _gameScore = value;
-            ScoreChanged?.Invoke(_gameScore);
+            OnScoreChanged?.Invoke(_gameScore);
         }
     }
 
@@ -89,6 +89,6 @@ public class GameManager : MonoBehaviour
         }
 
         GameTimer--;
-        TimerReduced?.Invoke(GameTimer);
+        OnTimerReduced?.Invoke(GameTimer);
     }
 }

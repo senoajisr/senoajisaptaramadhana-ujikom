@@ -9,7 +9,7 @@ public class ResumeButton : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.Paused += OnPaused;
+        GameManager.Instance.OnPaused += OnPaused;
         PauseMenu.SetActive(false);
     }
 
