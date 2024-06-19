@@ -15,6 +15,7 @@ public class ResumeButton : MonoBehaviour
 
     private void OnPaused(bool value)
     {
+        if (GameManager.Instance.GameOver) return;
         PauseMenu.SetActive(value);
     }
 

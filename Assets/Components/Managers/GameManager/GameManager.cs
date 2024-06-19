@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
         if (GameTimer <= 0)
         {
             GameOver = true;
+            GamePause = true;
             CancelInvoke(nameof(TimerReduce));
             return;
         }
