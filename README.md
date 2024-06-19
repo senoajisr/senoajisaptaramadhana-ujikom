@@ -10,9 +10,9 @@ Universitas Telkom
 
 - [x] Repo publik
 
-- [ ] Commit untuk build windows di branch "build"
+- [x] Commit untuk build windows di branch "build"
 
-- [ ] Submit link repo ke course
+- [x] Submit link repo ke course
 
   
 
