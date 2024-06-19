@@ -10,9 +10,9 @@ Universitas Telkom
 
 - [x] Repo publik
 
-- [ ] Commit untuk build windows di branch "build"
+- [x] Commit untuk build windows di branch "build"
 
-- [ ] Submit link repo ke course
+- [x] Submit link repo ke course
 
   
 
@@ -54,10 +54,10 @@ Universitas Telkom
     - [x] lifetime 3
     - [x] Movement
   - [ ] Animals
-    - [ ] Speed
-    - [ ] Hunger
-    - [ ] Score
-    - [ ] Deer
+    - [x] Speed
+    - [x] Hunger
+    - [x] Score
+    - [x] Deer
     - [ ] Dog
     - [ ] Horse
     - [ ] Cow
