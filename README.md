@@ -54,10 +54,10 @@ Universitas Telkom
     - [x] lifetime 3
     - [x] Movement
   - [ ] Animals
-    - [ ] Speed
-    - [ ] Hunger
-    - [ ] Score
-    - [ ] Deer
+    - [x] Speed
+    - [x] Hunger
+    - [x] Score
+    - [x] Deer
     - [ ] Dog
     - [ ] Horse
     - [ ] Cow
