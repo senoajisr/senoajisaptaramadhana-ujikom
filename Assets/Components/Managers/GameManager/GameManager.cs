@@ -7,8 +7,19 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Action<int> TimerReduced;
+    public Action<int> ScoreChanged;
 
     public int GameTimer = 60;
+    private int _gameScore = 0;
+    public int GameScore
+    {
+        get { return _gameScore; }
+        set {
+            _gameScore = value;
+            ScoreChanged.Invoke(_gameScore);
+        }
+    }
+
 
     public static GameManager Instance;
 
