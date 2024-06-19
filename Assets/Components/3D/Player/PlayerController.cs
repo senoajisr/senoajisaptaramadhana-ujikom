@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 10f;
+    public GameObject FoodObject;
 
     public CharacterController controller;
     public Animator animator;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
         bool isShootKeyDown = Input.GetButtonDown("Fire1");
         if (!isShootKeyDown) return;
         animator.SetTrigger("Throw");
+        Instantiate(FoodObject, transform);
     }
 
     void Movement()

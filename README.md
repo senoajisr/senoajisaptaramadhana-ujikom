@@ -20,39 +20,39 @@ Universitas Telkom
 
 - [x] Main menu
 
-- [ ] Game play
+- [x] Game Menus
 
-  - [ ] Pause menu
-    - [ ] UI
-    - [ ] Stop game
-  - [ ] Game over menu
+  - [x] Pause menu
+    - [x] UI
+    - [x] Stop game
+  - [x] Game over menu
 
-- [ ] Input
+- [x] Input
 
-  - [ ] A/l arrow, D/r arrow player kanan kiri
-  - [ ] klik kiri/spasi tembak
-  - [ ] esc pause
+  - [x] A/l arrow, D/r arrow player kanan kiri
+  - [x] klik kiri/spasi tembak
+  - [x] esc pause
 
-- [ ] player
+- [x] player
 
-  - [ ] scale 3
-  - [ ] speed 350
-  - [ ] movement dir: horizontal
-  - [ ] animation
-    - [ ] idle
-    - [ ] strafe r
-    - [ ] strafe l
-    - [ ] game over
-    - [ ] throw
+  - [x] scale 3
+  - [x] speed 350
+  - [x] movement dir: horizontal
+  - [x] animation
+    - [x] idle
+    - [x] strafe r
+    - [x] strafe l
+    - [x] game over
+    - [x] throw
   - [ ] camera
-    - [ ] projection 3d prespective
-    - [ ] fixedtop down, follow player
+    - [x] projection 3d prespective
+    - [x] fixedtop down
     - [ ] camera to front player when finished (ease in out 1s)
   - [ ] Food
-    - [ ] speed 300
-    - [ ] hunger 25
-    - [ ] lifetime 3
-    - [ ] Animation
+    - [x] speed 300
+    - [x] hunger 25
+    - [x] lifetime 3
+    - [x] Movement
   - [ ] Animals
     - [ ] Speed
     - [ ] Hunger

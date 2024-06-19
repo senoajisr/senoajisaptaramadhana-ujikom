@@ -73,6 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  FoodObject: {fileID: 4985311967319780321, guid: 0d7578f5a064d266d84781095a035171, type: 3}
   controller: {fileID: 7780565234242604495}
   animator: {fileID: 6928313637375337381}
 --- !u!1001 &6554440240870701278
