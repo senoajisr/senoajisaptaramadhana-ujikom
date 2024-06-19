@@ -9,8 +9,18 @@ public class GameManager : MonoBehaviour
     public Action<int> TimerReduced;
     public Action<int> ScoreChanged;
     public Action<bool> Paused;
+    public Action<bool> OnGameOver;
 
     public int GameTimer = 60;
+    public bool _gameOver = false;
+    public bool GameOver
+    {
+        get { return _gameOver; }
+        set {
+            _gameOver = value;
+            OnGameOver?.Invoke(value);
+        }
+    }
     public bool _gamePause = false;
     public bool GamePause
     {
@@ -73,6 +83,7 @@ public class GameManager : MonoBehaviour
 
         if (GameTimer <= 0)
         {
+            GameOver = true;
             CancelInvoke(nameof(TimerReduce));
             return;
         }

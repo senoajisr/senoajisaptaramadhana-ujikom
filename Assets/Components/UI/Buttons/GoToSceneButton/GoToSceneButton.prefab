@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4674741740703408791}
   - component: {fileID: 3869952982573053844}
   - component: {fileID: 1710505291446317765}
-  - component: {fileID: 7608079682037123885}
+  - component: {fileID: 1665226199105790706}
   m_Layer: 5
   m_Name: GoToSceneButton
   m_TagString: Untagged
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7608079682037123885}
+      - m_Target: {fileID: 1665226199105790706}
         m_TargetAssemblyTypeName: GoToSceneButton, Assembly-CSharp
         m_MethodName: OnPressed
         m_Mode: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7608079682037123885
+--- !u!114 &1665226199105790706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e15fabdafc6b78c975486be498a7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Game
+  SceneName: 
 --- !u!1 &7538877416917771713
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play
+  m_text: GoToScene
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
